@@ -1,0 +1,60 @@
+.Staper-container {
+  display: flex;
+  background-color: #f0f2f5;
+  padding: 25px;
+}
+.staper-button-container {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  align-items: center;
+}
+.manage_stepper_buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #c3c3c354;
+  align-items: center;
+}
+.project-staper,
+.source-staper,
+.target-staper,
+.schema-staper,
+.schema-comparison,
+.assessment-report,
+.schema-migration {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.page-rendring-managestepper {
+  width: calc(100vw - 500px);
+  height: 412px;
+  overflow-y: auto;
+  position: relative;
+}
+.breadcrumbs-heading {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pages-container {
+  background-color: white;
+}
+.basic-info-project {
+  border: 1px solid #e6f7ff;
+
+  .heading-basic-info {
+    background-color: #e6f7ff;
+    padding: 5px 10px;
+  }
+  .project-info {
+    display: flex;
+    div {
+      width: 40%;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+}

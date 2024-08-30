@@ -1,0 +1,44 @@
+@import "../../assets/scss//mixins";
+
+details > summary {
+  list-style: none;
+  border: 1px solid #d9d9d9;
+  padding: 10px 20px 10px 20px;
+  font-weight: 400;
+}
+details > p {
+  list-style: none;
+  border: 1px solid #d9d9d9;
+  padding: 10px 20px 10px 20px;
+}
+
+details > p > textarea {
+  min-height: 200px;
+  resize: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: " +";
+}
+details[open] summary:after {
+  content: " -";
+}
+
+.detail-class {
+  padding: 10px;
+}
+
+.detail-class h4 {
+  color: $primary-color;
+  border-bottom: 1px solid $primary-color;
+  width: fit-content;
+  height: 28px;
+}
+
+.detail-class textarea {
+  margin-top: 15px;
+  font-size: 16px;
+}

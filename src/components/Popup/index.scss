@@ -1,0 +1,72 @@
+.modal {
+  font-size: 12px;
+
+  padding: 15px;
+  width: 500px;
+  background-color: #f7f7f7;
+
+  border: 1px solid #d3d3d3;
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .column-list-text {
+      font-weight: 600;
+    }
+    .close {
+      border: none;
+      cursor: pointer;
+
+      display: block;
+      padding: 2px 5px;
+      line-height: 20px;
+      color: white;
+      font-size: 14px;
+      background: #ff7a45;
+      border-radius: 3px;
+    }
+  }
+  .popup-container {
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 10px;
+    .activeclass {
+      background-color: #ddb2ba29;
+      padding: 5px 8px;
+    }
+    .column-list {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 5px 8px;
+    }
+  }
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.add-more-column {
+  border: none;
+  background-color: #001529;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}

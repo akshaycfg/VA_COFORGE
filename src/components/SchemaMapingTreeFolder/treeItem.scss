@@ -1,0 +1,11 @@
+.treecomponent {
+  padding-left: 30px;
+  .treecomponent-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      margin-top: 10px;
+    }
+  }
+}

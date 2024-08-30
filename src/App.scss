@@ -1,0 +1,34 @@
+@import "./assets/scss/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --progress-bar-width: 50px;
+  --progress-bar-height: 50px;
+  --font-size: 2rem;
+  --font-family: "Anek Devanagari";
+}
+
+body {
+  font-family: $primary-font !important;
+}
+
+.container {
+  height: 100vh;
+}
+.CheckBox {
+  float: left;
+}
+.typeIconContainer svg path {
+  fill: #FF9C6E;
+  margin-bottom: -10px;
+}
+
+.TreeNode{
+   display: flex !important;
+    align-items: center !important;
+}

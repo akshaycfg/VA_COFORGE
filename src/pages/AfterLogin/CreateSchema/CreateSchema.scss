@@ -1,0 +1,41 @@
+.createschemaTree {
+  margin:20px;
+  height: calc(100% - 40px);
+    width: calc(100% - 40px);
+  .folder-tree-container{
+    padding:15px;
+  }
+  .choose-schema{
+    padding-left: 15px;
+    border-bottom: 2px solid #d4d4d4;
+  }
+  border:1px solid #d4d4d4;
+ 
+  
+  .TreeNode {
+    display: flex !important;
+    align-items: center !important;
+    height: 28px;
+  }
+ 
+  .displayName {
+    font-size: 12px;
+  }
+  .typeIconContainer {
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-top: 5px;
+    }
+  }
+  .caretContainer {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.mapping-button {
+  display: flex;
+  float: right;
+}

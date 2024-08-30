@@ -1,0 +1,16 @@
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+.loader-arrow{
+  margin-left: 16px;
+  margin-bottom: -7px;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(-0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}

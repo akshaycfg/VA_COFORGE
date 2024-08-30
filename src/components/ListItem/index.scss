@@ -1,0 +1,47 @@
+.data-table {
+  width: 100%;
+  td,
+  th {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 13px;
+    border-bottom: 1px solid #9d9d9d2e;
+    height: 35px;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f27d;
+  }
+  .t-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    //justify-content: space-between;
+    .image-seprator {
+      height: 30px;
+      width: 2px;
+      margin-bottom: 10px;
+      background-color: #f5f2f2;
+    }
+  }
+  .generate {
+    background-color: #001529;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .view {
+    cursor: pointer;
+    margin-left: 18px;
+    background-color: #ff7a45;
+    color: white;
+    padding: 5px 20px;
+    height: 30px;
+    border-radius: 5px;
+  }
+}
+.manage-button {
+  cursor: pointer;
+  color: blue;
+}

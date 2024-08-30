@@ -1,0 +1,12 @@
+.breadcrum-container {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  span {
+    color: #9d9d9d;
+  }
+}

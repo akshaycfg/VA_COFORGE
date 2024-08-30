@@ -1,0 +1,8 @@
+{
+    "pgto_aws_project1": {
+        "config_slct": [
+            "cirium_otp.py",
+            "dmz.py"
+        ]
+    }
+}

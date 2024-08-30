@@ -1,0 +1,7 @@
+{
+    "PG_to_S3_metadata_businessfile": {
+        "config_slct": [
+            "cirium_otp.py"
+        ]
+    }
+}

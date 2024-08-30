@@ -1,0 +1,23 @@
+vmail = {
+    "file_path": "/Users/samsharrock/Downloads/atech.xlsx",
+    "master_metadata_system": "atech",
+    "master_metadata_system_path": "atech",
+    "model_type" : "snapshot",
+    "strategy" : "timestamp_with_late_arriving",
+    "table_time_zone": "Australia/Brisbane",
+    "timestamp_format": "d/MM/yyyy H:mm:ss",
+    "date_only_format": "d/MM/yyyy",
+    "first_data_row": "0",
+    "output_file_name": "/Users/samsharrock/Documents/repos/edp-x-light/dbt_code_generator/metadata/atech.json",
+    "pos_ix": 3,
+    "bronze_to_silver_mapping_ix": 9,
+    "column_name_ix": 2,
+    "unique_key_ix": 9,
+    "soft_delete_key_ix": 0,
+    "is_nullable_ix": 12,
+    "source_data_type_ix": 4,
+    "parquet_data_type_ix": 6,
+    "bronze_data_type_ix": 6,
+    "silver_data_type_ix": 0,
+    "tabs_to_ignore": ["Check List"]
+}

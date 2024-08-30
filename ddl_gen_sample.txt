@@ -1,0 +1,73 @@
+{%- for table in tables -%}
+{%- if table.table_name == '__TABLENAME__' -%}
+{{ '{%-' }} set bronze_path = config.get('source_table') {{ '-%}' }}
+-- setting up the timestamp format where the timestamp is not in the default format.
+-- we can also setup a default format per source whichever is used the most.
+{{ '{%-' }} set time_stamp_format,timezone = config.get('timestamp_format','yyyy/MM/dd HH:mm:ss.SSS'),config.get('table_time_zone','UTC') {{ '-%}' }}
+-- this is setting up the date format variable where the date format is not the default format and not maches with the timestamp format
+{{ '{%-' }} set date_only_format = config.get('date_only_format', time_stamp_format.split(' ')[0]) {{ '-%}' }}
+
+{{ '{{' }} config(
+    file_format='delta',
+    schema='silver_{{system}}',
+    database='edp_' + var('dbt_var_env'),
+    alias='{{table.table_name|lower}}',
+    location_root='s3://va-edp-' + var("dbt_var_env") + '-silver-nopii/{{system}}/',
+    unique_key='{{table.name_unq_id}}',
+    group_key='{{table.name_grp_id}}',
+    child_group_key='{{table.name_child_grp_id}}',
+    strategy='merge',
+    materialized='edp_incremental',	
+    table_time_zone='{{table.table_time_zone}}',
+    timestamp_format='{{table.timestamp_format}}',
+    date_only_format='{{table.date_only_format}}',
+    primary_key_fields= [
+        {%- for item in table.schema.primary_key_fields -%}
+            '{{ item.name }}'{{ "," if not loop.last else "" }}
+        {%-  endfor -%}
+    ],
+    source_table='delta.`s3://va-edp-' + var('dbt_var_env') + '-bronze/{{system}}/{{system_name}}/{{table.table_name}}/`',
+    schema_name = '{{system}}',
+    table_name = '{{table.table_name|lower}}',
+    {{ 'pre_hook="{{ update_bronze() }}"' }}
+) {{ '}}' }}
+
+select
+    *
+from
+    (
+        select
+            {{ '{{ dbt_utils.generate_surrogate_key(' }}
+            [
+            {%- for item in table.schema.primary_key_fields %}
+            '{{ item.name }}'{{ "," if not loop.last else "" }}
+            {%-  endfor -%}
+            ]
+            {{ ') }}' }} as {{table.name_unq_id}},
+            --Metadata Control Columns
+            cast(ingestion_id_ctl as bigint) as ingestionidctl,
+            --Metadata Control Columns to be set by Post-Processing
+
+            {%- for item in table.schema.fields -%}
+            {%- if item.silver_data_type == 'DATE' %}
+            {{ '{{' }} date_separate("{{ item.name }}",date_only_format,time_stamp_format) {{ '}}' }}{{ "," if not loop.last else "" }}
+            {%- elif item.silver_data_type == 'TIMESTAMP' %}
+            to_timestamp(cast(trim({{ item.name }}) as string), '{{table.timestamp_format}}') as {{ item.name }}{{ "," if not loop.last else "" }}
+            {%- elif item.silver_data_type == 'STRING' %}
+            cast(trim({{ item.name }}) as {{ item.silver_data_type|lower }}) as {{ item.name }}{{ "," if not loop.last else "" }}
+            {%- else %}
+            cast(trim({{ item.name }}) as {{ item.silver_data_type|lower }}) as {{ item.name }}{{ "," if not loop.last else "" }}
+            {%- endif %}
+            {%-  endfor %},
+            cast(filedate_ctl as integer) as file_date_int,
+            to_timestamp(cast(filedate_ctl as string), 'yyyyMMdd') + interval 1 second * filetime_ctl as file_date_ts
+        from
+            {{ '{{' }} bronze_path {{ '}}' }}
+            {{ '{{' }} source('{{system}}_bronze_data', '{{table.table_name|lower}}') {{ '}}' }}
+        where
+            silver_processing_status_ctl = 'loaded'
+    )
+
+    {%- endif %}
+    {%-  endfor -%}
+

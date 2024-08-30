@@ -1,0 +1,138 @@
+{
+    "PG_to_S3_metadata_businessfile": {
+        "description": "Postgres to AWS S3",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "AWS S3",
+        "created_by": "admin",
+        "created_date": "2024-08-12 10:55:08.288388",
+        "list_of_configs": [
+            "cirium_otp.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "real_project": {
+        "description": "testing",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "PostgreSQL",
+        "created_by": "admin",
+        "created_date": "2024-08-13 12:49:24.268774",
+        "list_of_configs": [
+            "cirium_otp.py",
+            "dmz.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project": {
+        "description": "testing",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "PostgreSQL",
+        "created_by": "admin",
+        "created_date": "2024-08-13 12:55:45.671272",
+        "list_of_configs": [
+            "dmz.py",
+            "sabre_acs.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project1": {
+        "description": "testing",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "PostgreSQL",
+        "created_by": "admin",
+        "created_date": "2024-08-13 13:02:06.475091",
+        "list_of_configs": [
+            "cirium_otp.py",
+            "dmz.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project2": {
+        "description": "testing",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "PostgreSQL",
+        "created_by": "admin",
+        "created_date": "2024-08-13 13:13:52.423134",
+        "list_of_configs": [
+            "dmz.py",
+            "sabre_acs.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project3": {
+        "description": "testing",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "PostgreSQL",
+        "created_by": "admin",
+        "created_date": "2024-08-13 13:14:23.265885",
+        "list_of_configs": [
+            "dmz.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "New_Project": {
+        "description": "Desc",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "AWS S3",
+        "created_by": "admin",
+        "created_date": "2024-08-14 12:18:27.625692",
+        "list_of_configs": [
+            "cirium_otp.py"
+        ],
+        "metadata_source": "sourceDB"
+    },
+    "pgto_aws_project7": {
+        "description": "te56666",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "AWS S3",
+        "created_by": "admin",
+        "created_date": "2024-08-13 14:30:35.362304",
+        "list_of_configs": [
+            "cirium_otp.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project8": {
+        "description": "testing 8",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "AWS S3",
+        "created_by": "admin",
+        "created_date": "2024-08-13 15:07:02.744141",
+        "list_of_configs": [
+            "cirium_otp.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project9": {
+        "description": "testing 9",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "AWS S3",
+        "created_by": "admin",
+        "created_date": "2024-08-13 18:10:49.753491",
+        "list_of_configs": [
+            "cirium_otp.py"
+        ],
+        "metadata_source": "business_files"
+    },
+    "pgto_aws_project_source": {
+        "description": "testing 9",
+        "source_database_type": "PostgreSQL",
+        "source": "PostgreSQL",
+        "target": "AWS S3",
+        "created_by": "admin",
+        "created_date": "2024-08-14 17:44:48.165720",
+        "list_of_configs": [
+            "dmz.py"
+        ],
+        "metadata_source": "source_db"
+    }
+}

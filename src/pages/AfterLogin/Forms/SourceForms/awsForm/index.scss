@@ -1,0 +1,23 @@
+.awss3-container {
+  padding: 30px;
+  .source-awss3 {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 400px;
+  }
+  .source-postgres-button-container {
+    display: flex;
+    gap: 15px;
+  }
+}
+.staper-button-container {
+  display: flex;
+  gap: 20px;
+  height: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 30px;
+}

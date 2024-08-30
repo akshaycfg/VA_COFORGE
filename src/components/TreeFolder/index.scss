@@ -1,0 +1,27 @@
+.schemaTree {
+  padding: 10px 20px 20px;
+  .mapping-button {
+    display: flex;
+    float: right;
+  }
+  .treeview-items {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .treeview-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .imgdropdownww-class {
+      cursor: pointer;
+    }
+    .imgcoleps-class {
+      cursor: pointer;
+      transform: rotate(-90deg);
+    }
+    svg{
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "pgto_aws_project_source",
+    "children": [
+        {
+            "name": "pg_toast",
+            "children": []
+        },
+        {
+            "name": "pg_temp_1",
+            "children": []
+        },
+        {
+            "name": "pg_toast_temp_1",
+            "children": []
+        },
+        {
+            "name": "pg_catalog",
+            "children": []
+        },
+        {
+            "name": "public",
+            "children": []
+        },
+        {
+            "name": "information_schema",
+            "children": []
+        },
+        {
+            "name": "testdb1",
+            "children": []
+        }
+    ]
+}

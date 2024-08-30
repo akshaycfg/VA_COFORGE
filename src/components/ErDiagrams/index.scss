@@ -1,0 +1,86 @@
+.zoom3 {
+  width: 100vw;
+  svg {
+    // margin-top: -60px;
+  }
+}
+.zoom2 {
+  width: 80vw;
+  svg {
+    // margin-top: -50px;
+  }
+}
+.zoom1 {
+  width: 60vw;
+  svg {
+    // margin-top: -40px;
+  }
+}
+.zoom0 {
+  width: 40vw;
+  svg {
+    // margin-top: -20px;
+  }
+}
+.zoom4 {
+  width: 120vw;
+  svg {
+    // margin-top: -90px;
+  }
+}
+.zoom5 {
+  width: 140vw;
+  svg {
+    // margin-top: -110px;
+  }
+}
+.zoom5 {
+  width: 180vw;
+  svg {
+    // margin-top: -110px;
+  }
+}
+
+.er-loading{
+  display: flex;
+  position: absolute;
+  z-index: 9999999;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  top: 38px;
+  background-color: #ffffff;
+}
+.erdiagram-container {
+  padding: 0px 10px;
+  position: relative;
+  .min-max-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .button-container {
+      z-index: 9999999;
+    }
+  }
+  .min-max-button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .max-button {
+      padding: 7px 6px 8px 9px;
+      height: 35px;
+      border-radius: 5px;
+      background-color: #001529;
+      z-index: 999999;
+      cursor: pointer;
+    }
+  }
+}
+
+.bgBlur{
+filter: blur(8px);
+-webkit-filter: blur(8px);
+  height: 100%;
+}

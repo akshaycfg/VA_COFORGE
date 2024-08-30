@@ -1,0 +1,14 @@
+.batchone-container {
+  .batchone-buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .batchone-input-selector-container {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .table-container {
+    position: relative;
+  }
+}

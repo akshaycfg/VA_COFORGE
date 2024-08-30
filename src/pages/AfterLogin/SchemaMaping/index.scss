@@ -1,0 +1,23 @@
+.mapping-button {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+
+.schema-maping-container {
+  margin:20px;
+    height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      .schemamaping{
+        padding-left: 15px;
+        border-bottom: 2px solid #d4d4d4;
+      }
+      border:1px solid #d4d4d4;
+      .folder-tree-container{
+        padding:15px;
+      }
+}
+
+
+

@@ -1,0 +1,17 @@
+.data-table {
+  width: 100%;
+  td,
+  th {
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 1px solid #9d9d9d2e;
+    height: 50px;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f27d;
+  }
+}
+
+.table-progress-bar {
+  width: 400px;
+}

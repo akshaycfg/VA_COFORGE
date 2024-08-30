@@ -1,0 +1,23 @@
+.filter-drop-downs {
+  display: flex;
+  align-items: center;
+  .search-button {
+    button {
+      background: white;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      height: 35px;
+      border-radius: 0px 5px 5px 0px;
+      border-bottom: 1px solid #d5d5d5;
+      border-top: 1px solid #d5d5d5;
+      border-right: 1px solid #d5d5d5;
+      margin-top: 12px;
+      margin-left: -10px;
+      width: 45px;
+    }
+  }
+  .search-input {
+    margin-top: 10px;
+  }
+}

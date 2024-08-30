@@ -1,0 +1,28 @@
+.create-project-container {
+  padding: 30px;
+  .staper-button-container {
+    width: 100%;
+    gap: 10px;
+  }
+  .create-project {
+    margin-top: 20px;
+    // overflow-y: scroll;
+    height: 400px;
+  }
+  .metatdata {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+  .meta-data-source {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

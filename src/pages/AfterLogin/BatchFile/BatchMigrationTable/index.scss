@@ -1,0 +1,27 @@
+.tableone-container {
+  .data-tableOne {
+    .header-class {
+      text-align: center;
+    }
+    width: 250px;
+    height: 100%;
+    td,
+    th {
+      text-align: left;
+      padding-left: 15px;
+      font-size: 13px;
+      border-bottom: 1px solid #9d9d9d2e;
+      height: 35px;
+    }
+    tr {
+      height: 50px;
+    }
+    tr:nth-child(odd) {
+      background-color: #f2f2f27d;
+    }
+    .table-contents {
+      display: flex;
+      gap: 50px;
+    }
+  }
+}

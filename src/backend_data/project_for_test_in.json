@@ -1,0 +1,125 @@
+{
+    "name": "project_for_test_in",
+    "children": [
+        {
+            "name": "DEMODB"
+        },
+        {
+            "name": "TESTDB1"
+        },
+        {
+            "name": "REPORTDB"
+        },
+        {
+            "name": "TESTDB"
+        },
+        {
+            "name": "SCOTT"
+        },
+        {
+            "name": "DVF"
+        },
+        {
+            "name": "APEX_040200"
+        },
+        {
+            "name": "APEX_PUBLIC_USER"
+        },
+        {
+            "name": "FLOWS_FILES"
+        },
+        {
+            "name": "LBACSYS"
+        },
+        {
+            "name": "SPATIAL_CSW_ADMIN_USR"
+        },
+        {
+            "name": "SPATIAL_WFS_ADMIN_USR"
+        },
+        {
+            "name": "MDDATA"
+        },
+        {
+            "name": "OLAPSYS"
+        },
+        {
+            "name": "DVSYS"
+        },
+        {
+            "name": "SI_INFORMTN_SCHEMA"
+        },
+        {
+            "name": "ORDPLUGINS"
+        },
+        {
+            "name": "ORDDATA"
+        },
+        {
+            "name": "ORDSYS"
+        },
+        {
+            "name": "CTXSYS"
+        },
+        {
+            "name": "OJVMSYS"
+        },
+        {
+            "name": "WMSYS"
+        },
+        {
+            "name": "GSMCATUSER"
+        },
+        {
+            "name": "MDSYS"
+        },
+        {
+            "name": "ANONYMOUS"
+        },
+        {
+            "name": "XDB"
+        },
+        {
+            "name": "APPQOSSYS"
+        },
+        {
+            "name": "DBSNMP"
+        },
+        {
+            "name": "ORACLE_OCM"
+        },
+        {
+            "name": "DIP"
+        },
+        {
+            "name": "GSMUSER"
+        },
+        {
+            "name": "GSMADMIN_INTERNAL"
+        },
+        {
+            "name": "XS$NULL"
+        },
+        {
+            "name": "OUTLN"
+        },
+        {
+            "name": "SYSKM"
+        },
+        {
+            "name": "SYSDG"
+        },
+        {
+            "name": "SYSBACKUP"
+        },
+        {
+            "name": "SYSTEM"
+        },
+        {
+            "name": "AUDSYS"
+        },
+        {
+            "name": "SYS"
+        }
+    ]
+}

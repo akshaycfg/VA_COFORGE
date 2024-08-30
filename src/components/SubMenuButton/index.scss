@@ -1,0 +1,13 @@
+@import "../../assets/scss/mixins";
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span{
+    font-size: 12px;
+  }
+}
+
+.nav-button img:hover {
+  fill: "red";
+}

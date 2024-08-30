@@ -1,0 +1,73 @@
+@import "../../assets/scss/_mixins.scss";
+
+.headercontainer {
+  height: 68px;
+  background-color: #001529;
+  color: #ffffff;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.user-profile-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: $font-size;
+}
+
+.user-profile-div img {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+
+  list-style-type: none;
+  // margin: 5px 0;
+  padding: 0;
+
+  border: 1px solid grey;
+  width: 150px;
+  margin-top: 106px;
+}
+
+.menu > li {
+  margin: 0;
+
+  background-color: white;
+}
+
+.menu > li:hover {
+  background-color: lightgray;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  background: none;
+  // color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+#headerText {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#mig {
+  color: #f26a51;
+}

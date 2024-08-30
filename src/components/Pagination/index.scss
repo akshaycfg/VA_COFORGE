@@ -1,0 +1,33 @@
+@import "../../assets/scss/_mixins.scss";
+
+.pagination {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    border: 1.5px solid lightgrey;
+    border-radius: 2px;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  li:active {
+    border: 1.5px solid $primary-color;
+  }
+
+  a {
+    text-decoration: none;
+    color: lightgray;
+  }
+
+  .page-item.active {
+    background-color: $primary-color;
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "pgto_aws_project3": {
+        "config_slct": [
+            "dmz.py"
+        ]
+    }
+}

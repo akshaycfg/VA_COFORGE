@@ -1,0 +1,15 @@
+.button-container {
+  display: flex;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  align-items: center;
+}
+.button-text {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

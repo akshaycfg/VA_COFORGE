@@ -1,0 +1,24 @@
+.source-azure-container {
+  padding: 30px;
+  .source-azure-button-container {
+    display: flex;
+    gap: 15px;
+  }
+}
+.staper-button-container {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.source-azure {
+  margin-top: 20px;
+
+  height: 400px;
+}

@@ -1,0 +1,21 @@
+.input-selector-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 0px;
+  select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #8681812e;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+    background-color: white;
+    outline: none;
+    option {
+      outline: none;
+      background-color: white;
+    }
+  }
+}

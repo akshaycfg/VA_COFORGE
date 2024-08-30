@@ -1,0 +1,7 @@
+{
+    "PG_to_S3": {
+        "config_slct": [
+            "cirium_otp.py"
+        ]
+    }
+}

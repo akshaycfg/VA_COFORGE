@@ -1,0 +1,8 @@
+{
+    "pgto_aws_project": {
+        "config_slct": [
+            "dmz.py",
+            "sabre_acs.py"
+        ]
+    }
+}

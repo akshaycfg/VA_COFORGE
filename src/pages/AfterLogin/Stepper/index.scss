@@ -1,0 +1,43 @@
+.Staper-container {
+  display: flex;
+  background-color: #f0f2f5;
+  padding: 25px;
+}
+.staper-button-container {
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+.project-staper,
+.source-staper,
+.target-staper,
+.schema-staper,
+.schema-comparison,
+.assessment-report,
+.schema-migration {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.page-rendring {
+  position: relative;
+  width: calc(100vw - 500px);
+  // height: 412px;
+  // overflow-y: auto;
+}
+.breadcrumbs-heading {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pages-container {
+  background-color: white;
+}

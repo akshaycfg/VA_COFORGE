@@ -1,0 +1,165 @@
+{
+    "name": "New_Project_15April_Oracle2Postgres",
+    "children": [
+        {
+            "name": "DEMODB",
+            "children": []
+        },
+        {
+            "name": "TESTDB1",
+            "children": []
+        },
+        {
+            "name": "REPORTDB",
+            "children": []
+        },
+        {
+            "name": "TESTDB",
+            "children": []
+        },
+        {
+            "name": "SCOTT",
+            "children": []
+        },
+        {
+            "name": "DVF",
+            "children": []
+        },
+        {
+            "name": "APEX_040200",
+            "children": []
+        },
+        {
+            "name": "APEX_PUBLIC_USER",
+            "children": []
+        },
+        {
+            "name": "FLOWS_FILES",
+            "children": []
+        },
+        {
+            "name": "LBACSYS",
+            "children": []
+        },
+        {
+            "name": "SPATIAL_CSW_ADMIN_USR",
+            "children": []
+        },
+        {
+            "name": "SPATIAL_WFS_ADMIN_USR",
+            "children": []
+        },
+        {
+            "name": "MDDATA",
+            "children": []
+        },
+        {
+            "name": "OLAPSYS",
+            "children": []
+        },
+        {
+            "name": "DVSYS",
+            "children": []
+        },
+        {
+            "name": "SI_INFORMTN_SCHEMA",
+            "children": []
+        },
+        {
+            "name": "ORDPLUGINS",
+            "children": []
+        },
+        {
+            "name": "ORDDATA",
+            "children": []
+        },
+        {
+            "name": "ORDSYS",
+            "children": []
+        },
+        {
+            "name": "CTXSYS",
+            "children": []
+        },
+        {
+            "name": "OJVMSYS",
+            "children": []
+        },
+        {
+            "name": "WMSYS",
+            "children": []
+        },
+        {
+            "name": "GSMCATUSER",
+            "children": []
+        },
+        {
+            "name": "MDSYS",
+            "children": []
+        },
+        {
+            "name": "ANONYMOUS",
+            "children": []
+        },
+        {
+            "name": "XDB",
+            "children": []
+        },
+        {
+            "name": "APPQOSSYS",
+            "children": []
+        },
+        {
+            "name": "DBSNMP",
+            "children": []
+        },
+        {
+            "name": "ORACLE_OCM",
+            "children": []
+        },
+        {
+            "name": "DIP",
+            "children": []
+        },
+        {
+            "name": "GSMUSER",
+            "children": []
+        },
+        {
+            "name": "GSMADMIN_INTERNAL",
+            "children": []
+        },
+        {
+            "name": "XS$NULL",
+            "children": []
+        },
+        {
+            "name": "OUTLN",
+            "children": []
+        },
+        {
+            "name": "SYSKM",
+            "children": []
+        },
+        {
+            "name": "SYSDG",
+            "children": []
+        },
+        {
+            "name": "SYSBACKUP",
+            "children": []
+        },
+        {
+            "name": "SYSTEM",
+            "children": []
+        },
+        {
+            "name": "AUDSYS",
+            "children": []
+        },
+        {
+            "name": "SYS",
+            "children": []
+        }
+    ]
+}

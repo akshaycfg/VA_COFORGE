@@ -1,0 +1,342 @@
+@import "../../../assets/scss/mixins.scss";
+
+.login {
+    @include LoginForm;
+    @include ConfirmModalContent;
+    input{
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: 0.1em;
+    }
+   .form{
+    .title{
+        margin-bottom: 49px;
+        h2{
+            font-size: 50px;
+            line-height: 72px;
+            letter-spacing: normal;
+        }
+        span{
+            line-height: 27px;
+            letter-spacing: -0.035em;
+        }
+     }
+     .checkLabel{
+         span{
+            font-size: $font-md;
+            letter-spacing: -0.05em;
+         }
+     }
+     .signUpText{
+        padding-left: 12px;
+      }
+      .borderLine{
+          padding: 0 20px;
+          height: 14px;
+      }
+
+      .otherLinks{
+          a{
+              line-height: 150%;
+              font-size: $font-lg;
+          }
+          .marginLeft11{
+            @include sm{
+                display: none;
+            }
+          }
+      }
+      .loginBtn{
+          box-shadow: $boxShadow5;
+      }
+    }
+
+    .campusInvitation {
+        padding:126px 105px;
+        max-width: 800px;
+
+        @include sm {
+            padding: 60px 30px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include sm {
+                flex-direction: column;
+            }
+
+            .box {
+                cursor: pointer;
+                max-width: 290px;
+                text-align: center;
+                border: 1.5px solid $greyColor20;
+                border-radius: 15px;
+                padding: 36px 23px 32px;
+
+                &:first-child {
+                    margin-right: 5px;
+                }
+
+                &:last-child {
+                    margin-left: 5px;
+                }
+
+                @include sm {
+                    &:first-child {
+                        margin-right: 0;
+                    }
+
+                    &:last-child {
+                        margin-left: 0;
+                        margin-top: 24px;
+                    }
+                }
+
+                &:hover {
+                    border: 1.5px solid $primaryColor;
+                }
+
+                h3 {
+                    font-size: 28px;
+                    letter-spacing: -1px;
+                    line-height: 41px;
+                }
+
+                span{
+                    letter-spacing: -0.5px;
+                }
+            }
+        }
+    }
+
+    .campusInvitationCode {    
+        padding: 60px 15px 70px 15px;    
+        max-width: 800px;
+        @include xlg{
+            padding: 50px 10px
+        }
+        @include sm{
+            padding: 40px 5px;
+        }
+        @include ScrollBar;
+        .modalWrapper{
+            max-width:613px;
+            margin: auto;
+            max-height: 80vh;
+            .wrapper{
+                padding:0 10px;
+                &.campusCodeWrapper{
+                    padding: 0 7px;
+                }
+            }
+        .head {
+            border-bottom: solid 1px $greyColor20;
+            padding-bottom: 9px;
+            margin-bottom: 6px;
+
+            h2 {
+                margin-bottom: 10px;
+                font-size: 26px;
+                line-height: 38px;
+            }
+            span{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: -0.05em;
+            }
+            .note{
+                span{
+                 font-size: $font-xs;
+                 letter-spacing: normal;
+                }
+            }
+            .error {
+                margin-top: 4px;
+                span{
+                    line-height: 12px;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .paraText{
+            font-size: 11px;
+        }
+
+        .enterCodebtn{
+            button{
+               max-width: 347px;
+               width: 100%;
+            }
+        }
+
+        .codeSection {
+            display: flex;
+            margin: 30px 0 48px;
+            @include sm {
+                flex-direction: column;
+            }
+
+            h2{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                color: $greyColor80;
+                width: 151px;
+            }
+            
+            .inputControl {
+                width: 288px;
+                position: relative;
+                @include sm {
+                    margin-left: 0;
+                    margin-top: 15px;
+                }
+                
+                input {
+                    width: 100%;
+                }
+
+                i {
+                    position: absolute;
+                    color: $blackColor;
+                    right: 15px;
+                    top: 19px;
+                    font-size: 13px;
+                }
+            }
+
+        }
+        
+        .requiredText{
+            margin-top: 13px;
+            text-align: right;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 138px 1fr;
+            grid-gap: 24px 15px;
+            padding-top: 2px;
+            @include sm{
+                grid-template-columns: 1fr;
+                grid-gap:1px 5px;
+            }
+            @include Button;
+            input {
+                font-size: 14px;
+                @include sm{
+                    font-size: $font-xs;
+                    padding: 0 10px;
+                    min-height: 44px;
+                }
+            }
+            .required {
+                position: relative;
+                span {
+                    position: absolute;
+                    right: 0;
+                    top: -18px;
+                }
+                &.widthManage{
+                    width: 288px;
+                }
+            }
+            .label {
+                padding-top: 10px;
+                label {
+                    font-size: 18px;
+                    color: $greyColor80;
+                    font-weight: 500;
+                    line-height: 26px;
+                    @include sm{
+                        font-size: $font-sm;
+                    }
+                }
+                
+            }
+            .flexAlign {
+                span {
+                    margin: 0 5px;
+                }
+            }
+            .dFlex {
+                button {
+                    margin-left: 10px;
+                    width: 134px;
+                    height: 48px;
+                    border: 1px solid $greyColor80;
+                    box-shadow: none;
+                    letter-spacing: -0.05em;
+                    color: $greyColor80;
+                    @include sm{
+                        max-width: 85px;
+                        font-size: 11px;
+                        margin-left: 6px;
+                    }
+                }
+                .widthManage{
+                    width: 288px;
+                    @include sm{
+                        max-width: 288px;
+                        width: 100%;
+                    }
+                }
+            }
+            .btnUpload{
+                button{
+                  max-width: 134px;
+                  width: 100%;
+                  height: 48px;
+                  box-shadow: none;
+                  letter-spacing: -0.05em;
+                  font-size: $font-sm;
+                  font-weight: 500;
+                }
+            }
+            .note {
+                margin-top: 6px;
+                span{
+                    line-height: 150%;
+                    @include sm{
+                        font-size: $font-xxs;
+                        line-height: 15px;
+                    }
+                }
+            }
+           
+        }
+
+        .registerBtn{
+            max-width: 347px;
+            width: 100%;
+            height: 65px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 180%;
+        }
+    }
+  }
+}
+// .backButton{
+//     border-radius: 10px;
+//     padding: 10px 10px 10px 20px;
+//     display: flex;
+//     align-items: center;
+//     width: 100px;
+//     border: 1px solid $greyColor20;
+//     margin-bottom: 10px;
+//     justify-content: center;
+//     color: $greyColor60;
+//     position: relative;
+//     &:hover{
+//         border-color: $primaryColor;
+//     }
+//     i{
+//         color: $greyColor60;
+//         left: 18px;
+//         position: absolute;
+//     }
+// }

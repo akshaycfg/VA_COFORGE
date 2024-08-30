@@ -1,0 +1,34 @@
+.batch-migration-container {
+  display: flex;
+  justify-content: space-between;
+  .migration-drop-down {
+    .migration-input-selector-container {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .migration-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* margin-bottom: 75px; */
+    justify-content: space-between;
+    width: 250px;
+    padding-top: 20px;
+    .mig-progress-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 10px;
+      .progress-success {
+        display: flex;
+        width: 15px;
+        height: 13px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #52c41a;
+      }
+    }
+  }
+}

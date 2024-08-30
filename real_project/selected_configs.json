@@ -1,0 +1,8 @@
+{
+    "real_project": {
+        "config_slct": [
+            "cirium_otp.py",
+            "dmz.py"
+        ]
+    }
+}

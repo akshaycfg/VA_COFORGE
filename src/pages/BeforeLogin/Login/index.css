@@ -1,0 +1,13 @@
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 16;
+ 
+}
+.errorMsg {
+  margin-bottom: 8px;
+  color: red;
+  /* font-size: $font-xxs; */
+ /* text-align: center; */
+}
+.forgot-password{
+  margin-top: -10px;
+}

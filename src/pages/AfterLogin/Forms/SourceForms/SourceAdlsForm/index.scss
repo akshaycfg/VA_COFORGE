@@ -1,0 +1,28 @@
+.source-adls-container {
+  padding: 30px;
+  .source-adls-button-container {
+    display: flex;
+    gap: 15px;
+  }
+}
+.staper-button-container {
+  display: flex;
+  gap: 20px;
+  height: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.test-connection {
+  border: none;
+  background-color: white;
+}
+.source-adls {
+  margin-top: 20px;
+
+  height: 400px;
+}

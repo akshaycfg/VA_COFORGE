@@ -1,0 +1,23 @@
+.migration-dropdown {
+  display: flex;
+  justify-content: start;
+  padding-left: 10px;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  .input-selector-container {
+    z-index: 9999999;
+  }
+}
+.er-digram {
+  padding: 10px 20px;
+}
+.zoom-button-wraper {
+  display: flex;
+  gap: 15px;
+}
+.back-arrow {
+  cursor: pointer;
+  margin-top: 10px;
+  z-index: 999999;
+}

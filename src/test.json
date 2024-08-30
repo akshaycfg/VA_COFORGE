@@ -1,0 +1,557 @@
+{
+    "DEMODB": {
+        "MAS_CON_5": {
+            "columns": [
+                {
+                    "name": "AGE",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "IMAGE": {
+            "columns": [
+                {
+                    "name": "TIMEWITHTIMEZONE_1",
+                    "data_type": "TIMESTAMP(6) WITH LOCAL TIME ZONE",
+                    "nullable": true
+                },
+                {
+                    "name": "TIMEWITHTIMEZONE",
+                    "data_type": "TIMESTAMP(6) WITH LOCAL TIME ZONE",
+                    "nullable": true
+                },
+                {
+                    "name": "NUMERICTYPE",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "INTTYPE",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "CHARTYPE",
+                    "data_type": "CHAR",
+                    "nullable": true
+                },
+                {
+                    "name": "CURRENTTIME",
+                    "data_type": "TIMESTAMP(6)",
+                    "nullable": true
+                },
+                {
+                    "name": "CURRENTDT",
+                    "data_type": "DATE",
+                    "nullable": true
+                },
+                {
+                    "name": "CBODY",
+                    "data_type": "CLOB",
+                    "nullable": true
+                },
+                {
+                    "name": "BODY_1",
+                    "data_type": "BLOB",
+                    "nullable": true
+                },
+                {
+                    "name": "BODY",
+                    "data_type": "BLOB",
+                    "nullable": true
+                },
+                {
+                    "name": "SUBJECT",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "ID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                }
+            ],
+            "primary_key": [
+                "ID"
+            ],
+            "foreign_keys": []
+        },
+        "HIM_MARKS10": {
+            "columns": [
+                {
+                    "name": "DATETM",
+                    "data_type": "TIMESTAMP(6)",
+                    "nullable": true
+                },
+                {
+                    "name": "MARK",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "MODULE_CODE",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "STUDENT_NO",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "TEST_MAS_EMP": {
+            "columns": [
+                {
+                    "name": "COUNTRY",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "CREATDT",
+                    "data_type": "TIMESTAMP(6)",
+                    "nullable": true
+                },
+                {
+                    "name": "STATUS",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPID",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "MAS_CON_2": {
+            "columns": [
+                {
+                    "name": "AGE",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "MAS_CON_3": {
+            "columns": [
+                {
+                    "name": "AGE",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "EMPLOYEES": {
+            "columns": [
+                {
+                    "name": "DEPARTMENT",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "LASTNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "FIRSTNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPLOYEEID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                }
+            ],
+            "primary_key": [
+                "EMPLOYEEID"
+            ],
+            "foreign_keys": []
+        },
+        "ORDERS": {
+            "columns": [
+                {
+                    "name": "TOTALAMOUNT",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPLOYEEID",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "ORDERDATE",
+                    "data_type": "DATE",
+                    "nullable": true
+                },
+                {
+                    "name": "ORDERID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                }
+            ],
+            "primary_key": [
+                "ORDERID"
+            ],
+            "foreign_keys": [
+                {
+                    "column": "EMPLOYEEID",
+                    "references": {
+                        "schema": "DEMODB",
+                        "table": "EMPLOYEES",
+                        "column": "EMPLOYEEID"
+                    }
+                }
+            ]
+        },
+        "PAYMENTS": {
+            "columns": [
+                {
+                    "name": "ORDERID",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPLOYEEID",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "PAYMENTDATE",
+                    "data_type": "DATE",
+                    "nullable": true
+                },
+                {
+                    "name": "PAYMENTID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                }
+            ],
+            "primary_key": [
+                "PAYMENTID"
+            ],
+            "foreign_keys": [
+                {
+                    "column": "EMPLOYEEID",
+                    "references": {
+                        "schema": "DEMODB",
+                        "table": "EMPLOYEES",
+                        "column": "EMPLOYEEID"
+                    }
+                },
+                {
+                    "column": "ORDERID",
+                    "references": {
+                        "schema": "DEMODB",
+                        "table": "ORDERS",
+                        "column": "ORDERID"
+                    }
+                }
+            ]
+        },
+        "MEMBERS": {
+            "columns": [
+                {
+                    "name": "DEPARTMENT",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "LASTNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "FIRSTNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                },
+                {
+                    "name": "EMPLOYEEID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                }
+            ],
+            "primary_key": [
+                "FIRSTNAME",
+                "EMPLOYEEID"
+            ],
+            "foreign_keys": []
+        }
+    },
+    "TESTDB": {
+        "CHECKKEYWORDS": {
+            "columns": [
+                {
+                    "name": "SEGMENT",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COLUMN1",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "CHECKDEFAULT": {
+            "columns": [
+                {
+                    "name": "SEGMENT",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "TRIGGER",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "MARKETSEGMENT",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                },
+                {
+                    "name": "COL2",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COL3",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COL1",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "CHECKDUPLICATE": {
+            "columns": [
+                {
+                    "name": "AGE",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPID",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "TEST_MAS_DATE": {
+            "columns": [
+                {
+                    "name": "COUNTRY",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "CREATDT",
+                    "data_type": "TIMESTAMP(6)",
+                    "nullable": true
+                },
+                {
+                    "name": "STATUS",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPID",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "MARKS": {
+            "columns": [
+                {
+                    "name": "MARK",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "MODULE_CODE",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "STUDENT_NO",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "TEST_MAS_EMP": {
+            "columns": [
+                {
+                    "name": "COUNTRY",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "CREATDT",
+                    "data_type": "TIMESTAMP(6)",
+                    "nullable": true
+                },
+                {
+                    "name": "STATUS",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPNAME",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "EMPID",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "INVENTORIES": {
+            "columns": [
+                {
+                    "name": "QUANTITY",
+                    "data_type": "NUMBER",
+                    "nullable": true
+                },
+                {
+                    "name": "WAREHOUSE_ID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                },
+                {
+                    "name": "PRODUCT_ID",
+                    "data_type": "NUMBER",
+                    "nullable": false
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "CHECKSAMENAME": {
+            "columns": [
+                {
+                    "name": "COLUMN3",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COLUMN2",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COLUMN1",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        },
+        "CHECKPKKEYCOL": {
+            "columns": [
+                {
+                    "name": "COL2",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                },
+                {
+                    "name": "COLUMN4",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COLUMN3",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COLUMN2",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COLUMN1",
+                    "data_type": "VARCHAR2",
+                    "nullable": true
+                },
+                {
+                    "name": "COL3",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                },
+                {
+                    "name": "COL1",
+                    "data_type": "VARCHAR2",
+                    "nullable": false
+                }
+            ],
+            "primary_key": null,
+            "foreign_keys": []
+        }
+    }
+}
